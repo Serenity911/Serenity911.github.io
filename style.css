@@ -31,11 +31,11 @@ html, body{
 #camera--sensor {
     max-height: 1rem;
 }
-
+/* 
 #details {
     white-space: pre-line;
     min-height: 20rem;
-}
+} */
 /* #camera--view, #camera--sensor, #camera--output{
     transform: scaleX(-1);
     filter: FlipH;
