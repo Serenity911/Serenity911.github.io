@@ -1,4 +1,5 @@
-var constraints = { video: { facingMode: { exact: "environment" }}, audio: false };
+var constraints = { video: { facingMode: { exact: "environment" }, width: { min: 1280 },
+height: { min: 720 } }, audio: false };
 
 const cameraView = document.querySelector("#camera--view"),
       cameraOutput = document.querySelector("#camera--output"),
