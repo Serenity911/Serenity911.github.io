@@ -21,7 +21,6 @@ html, body{
 #camera--view {
     border: thin solid red;
     min-height: 10rem;
-
 }
 
 #camera--output {
@@ -31,7 +30,10 @@ html, body{
 
 #camera--sensor {
     max-height: 1rem;
+}
 
+#details {
+    white-space: pre-line;
 }
 /* #camera--view, #camera--sensor, #camera--output{
     transform: scaleX(-1);
