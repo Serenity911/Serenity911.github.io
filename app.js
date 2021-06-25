@@ -25,7 +25,7 @@ cameraTrigger.onclick = function() {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp").replace("image/png", "image/111"); 
     cameraOutput.classList.add("taken");
-    details.textContent = `res: ${constraints.width} x ${constraints.height}; camera--sensor: ${cameraSensor.width}x ${cameraSensor.height}; cameraOutpu: ${cameraOutput.width} x ${cameraOutput.height}`
+    details.innerText = `res: ${constraints.width} x ${constraints.height}; camera--sensor: ${cameraSensor.width}x ${cameraSensor.height}; cameraOutpu: ${cameraOutput.width} x ${cameraOutput.height}`
 };
 
 
