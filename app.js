@@ -4,8 +4,9 @@ height: { min: 720 } }, audio: false };
 const cameraView = document.querySelector("#camera--view"),
       cameraOutput = document.querySelector("#camera--output"),
       cameraSensor = document.querySelector("#camera--sensor"),
-      cameraTrigger = document.querySelector("#camera--trigger")
-
+      cameraTrigger = document.querySelector("#camera--trigger"),
+      details = document.querySelector("#details"),
+    
 function cameraStart() {
     navigator.mediaDevices
         .getUserMedia(constraints)
@@ -24,6 +25,9 @@ cameraTrigger.onclick = function() {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp").replace("image/png", "image/111"); 
     cameraOutput.classList.add("taken");
+    details.textContent = `res: ${constraints.width} x ${constraints.height} 
+    \n camera--sensor: ${cameraSensor.width}x ${cameraSensor.height} 
+    \n cameraOutpu: ${cameraOutput.width} x ${cameraOutput.height}`
 };
 
 
