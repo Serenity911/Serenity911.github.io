@@ -5,14 +5,34 @@ html, body{
     width: 100%;
 }
 
-
+#camera {
+    display: flex;
+    flex-direction: column;
+    min-width: 26rem;
+}
+/* 
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: fixed;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
     object-fit: cover;
+} */
+
+#camera--view {
+    border: thin solid red;
+    min-height: 10rem;
+
 }
 
+#camera--output {
+    border: thin solid blue;
+    min-height: 10rem;
+}
+
+#camera--sensor {
+    max-height: 1rem;
+
+}
 /* #camera--view, #camera--sensor, #camera--output{
     transform: scaleX(-1);
     filter: FlipH;
@@ -33,7 +53,7 @@ html, body{
     left: calc(50% - 100px);
 }
 
-.taken{
+/* .taken{
     height: 100px!important;
     width: 100px!important;
     transition: all 0.5s ease-in;
@@ -42,4 +62,4 @@ html, body{
     top: 20px;
     right: 20px;
     z-index: 2;
-}
+} */
