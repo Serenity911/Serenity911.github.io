@@ -30,8 +30,8 @@ cameraTrigger.onclick = function() {
     document.getElementById('details').innerText = `res: ${constraints.video.width} x ${constraints.height}; windowH: ${windowHeigth} windowW: ${windowWidth}; camera--sensor: ${cameraSensor.width}x ${cameraSensor.height}; cameraOutput: ${cameraOutput.width} x ${cameraOutput.height}`
 };
 // body = document.getElementsByTagName("body")[0]
-windowWidth = window.innerWidth;
-windowHeigth = window.innerHeigth;
+// windowWidth = window.innerWidth;
+// windowHeigth = window.innerHeigth;
 
 
 window.addEventListener("load", cameraStart, false);
