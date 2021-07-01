@@ -25,9 +25,11 @@ cameraTrigger.onclick = function() {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp").replace("image/png", "image/111"); 
     cameraOutput.classList.add("taken");
-    document.getElementById('details').innerText = `res: ${constraints.width} x ${constraints.height}; camera--sensor: ${cameraSensor.width}x ${cameraSensor.height}; cameraOutpu: ${cameraOutput.width} x ${cameraOutput.height}`
+    document.getElementById('details').innerText = `res: ${constraints.video.width} x ${constraints.height}; windowH: ${windowHeigth} windowW: ${windowWidth}; camera--sensor: ${cameraSensor.width}x ${cameraSensor.height}; cameraOutput: ${cameraOutput.width} x ${cameraOutput.height}`
 };
 
+windowWidth = window.innerWidth;
+windowHeigth = window.innerHeight;
 
 
 window.addEventListener("load", cameraStart, false);
