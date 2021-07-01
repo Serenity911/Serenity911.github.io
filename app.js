@@ -21,7 +21,7 @@ function cameraStart() {
 
 cameraTrigger.onclick = function() {
     windowWidth = window.innerWidth;
-    windowHeigth = window.innerHeigth;
+    windowHeight = window.innerHeight;
     cameraSensor.width = cameraView.videoWidth;
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
